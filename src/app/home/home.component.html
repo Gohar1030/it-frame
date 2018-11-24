@@ -1,0 +1,497 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+
+    <img style="width:65px;" src="../../assets/IT-FRAME.png" alt="logo" />
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#myNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="myNav" class="collapse navbar-collapse">
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a href="#" class="nav-link home">{{'home' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" data-target="#about">{{'about_me' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a href="#service" class="nav-link" data-target="#service"
+            >{{'services' | translate}}</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link" data-target="#contact">{{'contact' | translate}}</a>
+        </li>
+        <li class="nav-item flags">
+          <img src="../../assets/uk.png" (click)="changeLang('en')">
+          <img src="../../assets/am.png" (click)="changeLang('am')">
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<section class="slider d-flex">
+  <div class="overlay"></div>
+  <div class="container">
+    <div
+      class="info d-flex flex-column h-100 align-items-start justify-content-center"
+    >
+      <h1 class="font-weight-bold wow bounceIn animated">{{"welcome" | translate}}</h1>
+      <p class="wow bounceIn animated">
+        {{'welcome_text' | translate}}
+      </p>
+    </div>
+  </div>
+</section>
+<section id="feature" class="feature text-center">
+  <div class="container">
+    <h2
+      class="main-header wow fadeIn animated"
+      data-wow-duration="2s"
+      data-wow-offset="60"
+    >
+      {{'engagement' | translate}} 
+    </h2>
+    <p
+      class="main-p wow fadeIn animated text-center"
+      data-wow-duration="2s"
+      data-wow-offset="60"
+    >
+      
+    </p>
+    <div class="row">
+      <div
+        class="col-sm-6 col-lg-3 mb-5 wow  animated"
+        [ngClass]="{'zoomIn': !isDevice}"
+        data-wow-duration="1s"
+        data-wow-offset="100"
+      >
+        <div class="box">
+          <i class="fa fa-globe fa-2x fa-fw" aria-hidden="true"></i>
+          <div class="f-info">
+            <h5>{{'web_dev_and_des_h' | translate}}</h5>
+            <p>
+              {{'web_dev_and_des_p_s' | translate}}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="col-sm-6 col-lg-3 mb-5 wow  animated"
+        data-wow-duration="1s"
+        data-wow-offset="120"
+        [ngClass]="{'zoomIn': !isDevice}"
+      >
+        <div class="box">
+          <i class="fa fa-mobile fa-2x fa-fw" aria-hidden="true"></i>
+          <div class="f-info">
+            <h5>{{'mob_app' | translate}}</h5>
+            <p>
+              {{'mob_app_p_s' | translate}}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+      class="col-sm-6 col-lg-3 mb-5 wow  animated"
+      data-wow-offset="120"
+      data-wow-duration="1s"
+      [ngClass]="{'slideInRight': !isDevice}"
+    >
+      <div class="box">
+        <i class="fa fa-pencil fa-2x fa-fw" aria-hidden="true"></i>
+        <div class="f-info">
+          <h5>{{'ui_ux_h' | translate}}</h5>
+          <p>
+            {{'ui_ux_p_s' | translate}}
+          </div>
+      </div>
+    </div>
+      <div
+        class="col-sm-6 col-lg-3 mb-5 wow  animated"
+        data-wow-offset="120"
+        data-wow-duration="1s"
+        [ngClass]="{'slideInRight': !isDevice}"
+      >
+        <div class="box">
+          <i class="fa fa-line-chart fa-2x fa-fw" aria-hidden="true"></i>
+          <div class="f-info">
+            <h5>{{'it_management_h' | translate}}</h5>
+            <p>
+              {{'it_management_p_s' | translate}}
+            </div>
+        </div>
+      </div>
+   
+    </div>
+  </div>
+</section>
+<section id="about" class="about">
+  <div class="container">
+    <h2
+      class="main-header text-center wow  animated"
+      data-wow-duration="1s"
+      data-wow-offset="60"
+      [ngClass]="{'bounceIn': !isDevice}"
+    >
+    {{'about_us' | translate}}
+  </h2>
+    <p
+      class="main-p text-center wow  animated"
+      data-wow-duration="1s"
+      data-wow-offset="60"
+      [ngClass]="{'bounceIn': !isDevice}"
+
+    >
+     
+    </p>
+    <div class="row">
+      <div
+        class="col-lg mb-5 wow "
+        data-wow-duration="1s"
+        data-wow-offset="80"
+        [ngClass]="{'slideInLeft': !isDevice}"
+
+      >
+        <div class="img">
+          <img
+            src="../../assets/we.png"
+            class="img-fluid d-block w-100"
+            alt="About Images"
+          />
+        </div>
+      </div>
+      <div
+        class="col-lg wow  animated"
+        data-wow-duration="1s"
+        data-wow-offset="80"
+        [ngClass]="{'slideInRight': !isDevice}"
+
+      >
+        <h5 class="mt-2">{{'who_we_are' | translate}}</h5>
+        <p class="mb-4">
+          {{'our_text' | translate}}
+        </p>
+        <h5>{{'what_we_offer' | translate}}</h5>
+        <p class="mb-4">     
+
+        </p>
+        <div class="row">
+        <div class="col">
+        <ol class="list-unstyled">
+        <li>
+        <i class="fa fa-check fa-fw" aria-hidden="true"></i>
+        <span>{{'clean_code' | translate}}</span>
+        </li>
+        <li>
+        <i class="fa fa-check fa-fw" aria-hidden="true"></i>
+        <span>{{'individual_ap' | translate}}</span>
+        </li>
+        <li>
+            <i class="fa fa-check fa-fw" aria-hidden="true"></i>
+            <span>{{'honesty' | translate}}</span>
+            </li>
+        </ol>
+        </div>
+        <div class="col">
+        <ol class="list-unstyled">
+        <li>
+        <i class="fa fa-check fa-fw" aria-hidden="true"></i>
+        <span>{{'reliable_services' | translate}}</span>
+        </li>
+        <li>
+        <i class="fa fa-check fa-fw" aria-hidden="true"></i>
+        <span>{{'friendly_atm' | translate}}</span>
+        </li>
+        <li>
+            <i class="fa fa-check fa-fw" aria-hidden="true"></i>
+            <span>{{'devotion' | translate}}</span>
+            </li>
+        </ol>
+        </div>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+</section>
+<section id="service" class="service">
+  <div class="container">
+    <h2
+      class="main-header text-center wow  animated"
+      data-wow-duration="1s"
+      data-wow-offset="60"
+      [ngClass]="{'bounceIn': !isDevice}"
+
+    >
+      {{'our_services' | translate}}
+    </h2>
+    <p
+      class="main-p text-center wow  animated"
+      data-wow-duration="1s"
+      data-wow-offset="60"
+      [ngClass]="{'bounceIn': !isDevice}"
+
+    >
+    </p>
+    <div class="row">
+      <div
+        class="col-sm-6 col-lg-4 col-xl-6 mb-5 wow  animated"
+        data-wow-duration="1.5s"
+        data-wow-offset="70"
+        [ngClass]="{'zoomInLeft': !isDevice}"
+
+      >
+        <div class="box">
+          <i class="fa fa-globe fa-3x fa-fw" aria-hidden="true"></i>
+          <h5>{{'web_dev_and_des_h' | translate}}</h5>
+          <p>
+              {{'web_dev_and_des_p' | translate}}          </p>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-lg-4 col-xl-6 mb-5 wow zoomInUp animated"
+        data-wow-duration="1.5s"
+        data-wow-offset="70"
+        
+      >
+        <div class="box">
+          <i class="fa fa-mobile fa-3x fa-fw" aria-hidden="true"></i>
+          <h5>{{'mob_app_h' | translate}}</h5>
+          <p>
+            {{'mob_app_p' | translate}}
+          </p>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-lg-4 col-xl-6 mb-5 wow zoomInDown animated"
+        data-wow-offset="70"
+        data-wow-duration="1.5s"
+      >
+        <div class="box">
+          <i class="fa fa-pencil fa-3x fa-fw" aria-hidden="true"></i>
+          <h5>{{'ui_ux_h' | translate}}</h5>
+          <p>
+            {{'ui_ux_p' | translate}}
+          </p>
+        </div>
+      </div>
+      <div
+        class="col-sm-6 col-lg-4 col-xl-6 mb-5 wow  animated"
+        data-wow-duration="1.5s"
+        data-wow-offset="80"
+        [ngClass]="{'zoomInLeft': !isDevice}"
+
+      >
+        <div class="box">
+          <i class="fa fa-line-chart fa-3x fa-fw" aria-hidden="true"></i>
+          <h5>{{'it_management_h' | translate}}</h5>
+          <p>
+            {{'it_management_p' | translate}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="count">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-6 col-lg-3 mb-5 wow fadeIn animated"
+        data-wow-duration="2s"
+        data-wow-offset="60"
+      >
+        <div class="media">
+          <i
+            class="fa fa-check-square-o fa-2x fa-fw mr-3"
+            aria-hidden="true"
+          ></i>
+          <div class="media-body">
+            <span class="timer" data-from="2" data-to="6" data-speed="10000"
+              >6</span
+            >
+            <p>{{'project_done' | translate}}</p>
+          </div>
+        </div>
+      </div>
+   
+      <div
+        class="col-6 col-lg-3 mb-5 wow fadeIn animated"
+        data-wow-duration="2s"
+        data-wow-offset="60"
+        data-wow-delay="2s"
+      >
+        <div class="media">
+          <i
+            class="fa fa-hourglass-start fa-2x fa-fw mr-3"
+            aria-hidden="true"
+          ></i>
+          <div class="media-body">
+            <span
+              class="timer"
+              data-from="100"
+              attr.data-to="{{hours}}"
+              data-speed="10000"
+              >{{hours}}</span
+            >
+            <p>{{'hours' | translate}}</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-6 col-lg-3 mb-5 wow fadeIn animated"
+        data-wow-duration="2s"
+        data-wow-offset="60"
+        data-wow-delay="3s"
+      >
+        <div class="media">
+          <i class="fa fa-coffee fa-2x fa-fw mr-3" aria-hidden="true"></i>
+          <div class="media-body">
+            <span class="timer" data-from="25" data-to="422" data-speed="10000"
+              >422</span
+            >
+            <p>{{'cup' | translate}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact">
+  <div class="container">
+    <h2
+      class="main-header text-center wow bounceIn animated"
+      data-wow-duration="2s"
+      data-wow-offset="60"
+    >
+      {{'contact_us' | translate}}
+    </h2>
+    <p
+      class="main-p text-center mb-5 wow bounceIn animated"
+      data-wow-duration="2s"
+      data-wow-offset="60"
+    >
+    </p>
+    <div class="box-contact">
+      <div class="row mt-5">
+        <div
+          class="col-md mb-4 wow fadeIn animated"
+          data-wow-duration="2s"
+          data-wow-offset="80"
+        >
+          <i class="fa fa-mobile fa-2x fa-fw" aria-hidden="true"></i>
+          <p>+37441787088</p>
+        </div>
+        <div
+          class="col-md mb-4 wow fadeIn animated"
+          data-wow-duration="2s"
+          data-wow-offset="80"
+        >
+          <i class="fa fa-mail-reply fa-2x fa-fw" aria-hidden="true"></i>
+          <p>info@itframe.com</p>
+        </div>
+        <div
+          class="col-md wow fadeIn animated"
+          data-wow-duration="2s"
+          data-wow-offset="80"
+        >
+          <i class="fa fa-clock-o fa-2x fa-fw" aria-hidden="true"></i>
+          <p>{{'mon_fri' | translate}} 09:00 – 18:00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+
+    <div class="form">
+      
+      <div class="row">
+        <div
+          class="col-lg wow  animated"
+          data-wow-duration="1s"
+          data-wow-offset="100"
+          [ngClass]="{'slideInLeft': !isDevice}"
+
+        >
+        <app-alerts></app-alerts>
+
+          <form [formGroup]="messageForm">
+
+            <div class="form-group">
+              <input
+                type="text"
+                formControlName="name"
+                name="user"
+                class="form-control"
+                placeholder="{{'your_name' | translate}}"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                formControlName="email"
+                class="form-control"
+                placeholder="{{'your_email' | translate}}"
+                email
+              />
+            </div>
+            <textarea
+              class="form-control form-group"
+              placeholder="{{'message' | translate}}"
+              rows="10"
+              formControlName="message"
+            ></textarea>
+            <button type="submit" (click)="send()" [disabled]="messageForm.invalid" class="btn" [ngClass]="{'invalid-btn':messageForm.invalid, 'btn-danger':messageForm.valid}">
+              <i class="fa fa-send fa-fw mr-1"></i>{{'send_message' | translate}}
+            </button>
+          </form>
+        </div>
+        <div
+          class="col-lg mt-5 mt-lg-0 wow  animated"
+          data-wow-offset="100"
+          data-wow-duration="1s"
+          [ngClass]="{'slideInRight': !isDevice}"
+
+        >
+          <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206895.51268692018!2d32.443870044203074!3d15.516659850769901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e8fde9837cabf%3A0x191f55de7e67db40!2sKhartoum%2C+Sudan!5e0!3m2!1sen!2ssa!4v1519810676490"
+            height="400"
+            frameborder="0"
+            style="border:0; width:100%"
+            allowfullscreen
+          ></iframe> -->
+          <agm-map [zoom]="8"  [latitude]="lat" [longitude]="lng">
+              <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+            </agm-map>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span
+    ><sup>&copy;</sup> 2018 CopyRight All Right Reversed For ITFrame LLC</span
+  >
+</footer>
+<section class="top"><i class="fa fa-arrow-up" aria-hidden="true"></i></section>
+<section class="loading">
+  `
+  <div class="spinner">
+    <div class="cube1"></div>
+    <div class="cube2"></div>
+    <div style="font-size:50px;width:200px;position: absolute; z-index:2000000;color:white;top:-120px;left:-50px">
+      IT Frame
+    </div>
+  </div>
+ 
+</section>
