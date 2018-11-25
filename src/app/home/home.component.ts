@@ -5,6 +5,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { AlertsService } from 'angular-alert-module';
 
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -42,6 +44,21 @@ export class HomeComponent implements OnInit {
 
     })
 
+  }
+
+  overfl(div,me,me1){
+   
+    div.style.overflow='visible';
+    div.style.height='100%';
+    me.style.display="none";
+    me1.style.display='block';
+  }
+  overfl1(div,me,me1){
+   
+    div.style.overflow='hidden';
+    div.style.height='218px';
+    me.style.display="none";
+    me1.style.display='block';
   }
 
 }

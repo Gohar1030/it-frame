@@ -20,6 +20,8 @@ agm-map {
 }
 .navbar {
   padding: 0.25rem 1rem;
+  padding-bottom: 20px;
+  background: #117a8b !important;
 }
 .navbar .navbar-brand span {
   color: #17a2b8;
@@ -41,7 +43,7 @@ agm-map {
 }
 .navbar .navbar-nav .nav-item.active .nav-link,
 .navbar .navbar-nav .nav-item:hover .nav-link {
-  color: #17a2b8 !important;
+  color: #2bc9e2  !important;
 }
 .slider {
   background: url("/assets/story.jpg") no-repeat center;
@@ -86,6 +88,10 @@ agm-map {
 .feature .row .box:hover {
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
   top: -6px;
+}
+.boxtext{
+  height: 218px;
+  overflow: hidden;
 }
 .feature .row .box .fa {
   position: absolute;
@@ -191,7 +197,6 @@ agm-map {
   transition: all 0.5s ease-in-out;
   position: relative;
   top: 0;
-  min-height: 460px;
 
 }
 .service .row .box:hover {
@@ -459,6 +464,7 @@ agm-map {
   margin: 8px auto 0;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
+  color: white;
 }
 
 .contact form input,
@@ -507,13 +513,14 @@ footer {
 .cube1,
 .cube2 {
   background-color: #ff214e;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 0;
   left: 0;
   -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
   animation: sk-cubemove 1.8s infinite ease-in-out;
+  border-radius: 50%;
 }
 .cube2 {
   -webkit-animation-delay: -0.9s;
@@ -570,7 +577,7 @@ footer {
   }
   .navbar .navbar-nav .nav-item.active .nav-link,
   .navbar .navbar-nav .nav-item:hover .nav-link {
-    background-color: #17a2b8 !important;
+    background-color: #2bc9e2 !important;
     color: #fff !important;
     padding-left: 15px;
   }
@@ -584,7 +591,10 @@ footer {
   }
   .slider .container .info .btn-info {
     font-size: 13px;
+    color:white;
+    width: 100px!important;
   }
+  
   .feature .main-header {
     font-size: 25px;
   }
@@ -687,9 +697,16 @@ footer {
     letter-spacing: normal;
   }
   .slider .container .info .btn-info {
-    font-size: 15px;
+    font-size: 15px;;
+  }
+
+}
+@media  (max-width: 767.98px) {
+  .flags{
+    padding:20px 0;
   }
 }
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   .slider .container .info p {
     width: 90%;
