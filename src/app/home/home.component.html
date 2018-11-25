@@ -474,7 +474,6 @@
           [ngClass]="{'slideInLeft': !isDevice, 'wow':!isDevice,'animated':!isDevice}"
 
         >
-        <app-alerts></app-alerts>
 
           <form [formGroup]="messageForm">
 
@@ -515,16 +514,8 @@
           [ngClass]="{'slideInRight': !isDevice,'wow':!isDevice,'animated':!isDevice}"
 
         >
-          <!-- <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206895.51268692018!2d32.443870044203074!3d15.516659850769901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x168e8fde9837cabf%3A0x191f55de7e67db40!2sKhartoum%2C+Sudan!5e0!3m2!1sen!2ssa!4v1519810676490"
-            height="400"
-            frameborder="0"
-            style="border:0; width:100%"
-            allowfullscreen
-          ></iframe> -->
-          <agm-map [zoom]="8"  [latitude]="lat" [longitude]="lng">
-              <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
-            </agm-map>
+        
+            <div style="overflow:hidden;width: 700px;height: 440px;"><iframe width="700" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=koryun+(urartu)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div><small><a href=""></a></small></div><div><small><a href="https://iamsterdamcard.it">http://iamsterdamcard.it/</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
         </div>
       </div>
     </div>

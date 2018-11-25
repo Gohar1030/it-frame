@@ -11,7 +11,6 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DeviceDetectorModule } from 'ngx-device-detector';
-import { AlertsModule } from 'angular-alert-module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -31,7 +30,6 @@ export function createTranslateLoader(http: HttpClient) {
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AlertsModule.forRoot(),
     DeviceDetectorModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
@@ -41,7 +39,7 @@ export function createTranslateLoader(http: HttpClient) {
       }
   }),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyCKsJb7Xujvy3lZfkkJXzxwbRiTmqGXk7M'
+      apiKey: 'AIzaSyDuydJt70yHLaMrpQqE3gWziy7'
     })
   ],
   

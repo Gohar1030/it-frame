@@ -1,9 +1,7 @@
-import { Component, OnInit, ViewContainerRef } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { DeviceDetectorService } from 'ngx-device-detector';
-import { AlertsService } from 'angular-alert-module';
 
 
 
@@ -23,13 +21,14 @@ export class HomeComponent implements OnInit {
     email: new FormControl('',Validators.required),
     message: new FormControl('',Validators.required)
   });
-  constructor(public tr:TranslateService, private alerts: AlertsService, deviceService: DeviceDetectorService,public translate:TranslateService) { 
+  constructor(public tr:TranslateService, deviceService: DeviceDetectorService,public translate:TranslateService) { 
     this.isDevice= deviceService.isMobile();
 
   }
 
   ngOnInit() {
     this.hours = Math.floor((new Date().getTime() - new Date(2018,7,18,7).getTime())/1000/60/60);
+   
   }
 
   changeLang(lang){
@@ -40,7 +39,6 @@ export class HomeComponent implements OnInit {
     console.log('send');
     this.messageForm.reset();
     this.tr.get('success').subscribe(text=> {
-      this.alerts.setMessage(text,'success');
 
     })
 
